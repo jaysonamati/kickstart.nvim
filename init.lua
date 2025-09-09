@@ -619,7 +619,9 @@ require('lazy').setup({
         -- pyright = {},
         rust_analyzer = {},
         zls = {},
-        hls = {},
+        hls = {
+          cmd = { 'haskell-language-server-wrapper', '--lsp' },
+        },
         elixirls = {},
         -- agda_ls = {},
         -- idris2_lsp = {},
