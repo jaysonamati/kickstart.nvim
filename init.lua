@@ -619,9 +619,9 @@ require('lazy').setup({
         -- pyright = {},
         rust_analyzer = {},
         zls = {},
-        hls = {
-          cmd = { 'haskell-language-server-wrapper', '--lsp' },
-        },
+        -- hls = {
+        --   cmd = { 'haskell-language-server-wrapper', '--lsp' },
+        -- },
         elixirls = {},
         -- agda_ls = {},
         -- idris2_lsp = {},
@@ -688,6 +688,13 @@ require('lazy').setup({
         },
       }
     end,
+  },
+
+  -- haskell tools
+  {
+    'mrcjkb/haskell-tools.nvim',
+    version = '^7', -- Recommended
+    lazy = false, -- This plugin is already lazy
   },
 
   { -- Autoformat
